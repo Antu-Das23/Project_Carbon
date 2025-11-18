@@ -1,0 +1,25 @@
+/* App.css - Basic styling for App component */
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.App h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.App button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.App button:hover {
+  background-color: #45a049;
+}
