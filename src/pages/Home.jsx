@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { ArrowRight, Play, ChevronDown, X } from "lucide-react";
 
 export default function Home() {
-  const navigate = useNavigate();
   const [showVideo, setShowVideo] = useState(false);
 
   // --- Users State & Functions ---
@@ -51,7 +49,8 @@ export default function Home() {
   ];
 
   const handleGetStarted = () => {
-    navigate("/Login"); // Change "/auth" to your actual login/register page route
+    // Navigate to login page
+    window.location.href = "/Login";
   };
 
   const handleWatchDemo = () => {
@@ -162,7 +161,7 @@ export default function Home() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/xOftAPQoRoU?autoplay=1"
+                src="https://www.youtube.com/embed/Flo-4KaY9XY?autoplay=1"
                 title="Carbon Footprint Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
